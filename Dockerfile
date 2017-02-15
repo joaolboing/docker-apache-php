@@ -1,4 +1,4 @@
-FROM joaolboing/apache
+FROM joaolboing/apache:14.04
 
 MAINTAINER joaolboing <joaolboing@gmail.com>
 
