@@ -15,7 +15,6 @@ php5-mcrypt \
 php5-apcu \
 php5-json \
 php5-pgsql \
-php5-zip \
 php-soap && \
 
 php5enmod mcrypt && \
