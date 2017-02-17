@@ -19,4 +19,6 @@ php-soap && \
 
 php5enmod mcrypt && \
 
+a2enmod rewrite && \
+
 rm -rf /var/lib/apt/lists/*
