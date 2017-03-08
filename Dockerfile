@@ -19,7 +19,7 @@ php-soap && \
 
 php5enmod mcrypt && \
 
-sed -i 's/display_errors = Off/display_errors = On/' /etc/php5/apache2/php.ini && \
-sed -i 's/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE/' /etc/php5/apache2/php.ini && \
+sed -i 's/^display_errors = .*/display_errors = On/' /etc/php5/apache2/php.ini && \
+sed -i 's/^error_reporting = .*/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT \& ~E_NOTICE/' /etc/php5/apache2/php.ini && \
 
 rm -rf /var/lib/apt/lists/*
