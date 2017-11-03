@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 RedisConfFile='/etc/php5/mods-available/redis.ini'

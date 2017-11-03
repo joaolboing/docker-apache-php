@@ -29,6 +29,6 @@ rm -rf /var/lib/apt/lists/*
 #RUN ln -sf /dev/stdout /var/log/apache2/access.log
 RUN ln -sf /dev/stdout /var/log/apache2/error.log
 
-COPY run.sh /run.sh
+COPY ./run.sh /run.sh
 RUN chmod +x /run.sh
 CMD [ "/run.sh" ]
