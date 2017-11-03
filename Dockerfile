@@ -16,6 +16,7 @@ php5-apcu \
 php5-json \
 php5-pgsql \
 php5-mysql \
+php5-redis \
 php-soap && \
 
 php5enmod mcrypt && \
