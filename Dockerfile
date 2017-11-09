@@ -23,7 +23,7 @@ rm -rf /var/lib/apt/lists/*
 
 RUN sed -i 's/^display_errors = .*/display_errors = On/' /etc/php5/apache2/php.ini && \
 sed -i 's/^error_reporting = .*/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT \& ~E_NOTICE/' /etc/php5/apache2/php.ini && \
-sed -i 's/^session.gc_maxlifetime = .*/session.gc_maxlifetime = 86400' /etc/php5/apache2/php.ini
+sed -i 's/^session.gc_maxlifetime = .*/session.gc_maxlifetime = 86400/' /etc/php5/apache2/php.ini
 
 #RUN ln -sf /dev/stdout /var/log/apache2/access.log
 RUN ln -sf /dev/stdout /var/log/apache2/error.log
