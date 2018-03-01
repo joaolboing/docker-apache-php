@@ -26,7 +26,7 @@ RUN sed -i 's/^display_errors = .*/display_errors = On/' /etc/php5/apache2/php.i
     sed -i 's/^session.gc_maxlifetime = .*/session.gc_maxlifetime = 14400/' /etc/php5/apache2/php.ini && \
     sed -i 's/^session.gc_divisor = .*/session.gc_divisor = 100/' /etc/php5/apache2/php.ini && \
     sed -i 's/^session.gc_probability = .*/session.gc_probability = 1/' /etc/php5/apache2/php.ini && \
-    sed -i 's/^max_execution_time = .*/max_execution_time = 600/' /etc/php5/apache2/php.ini && \
+    sed -i 's/^max_execution_time = .*/max_execution_time = 600/' /etc/php5/apache2/php.ini 
 
 #RUN ln -sf /dev/stdout /var/log/apache2/access.log
 RUN ln -sf /dev/stdout /var/log/apache2/error.log
